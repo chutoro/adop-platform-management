@@ -66,8 +66,10 @@ done < ${WORKSPACE}/platform-management/cartridges.txt''')
                 url("${platformToolsGitURL}")
                 credentials("adop-jenkins-master")
             }
-            branch("*/master")
-            relativeTargetDir('platform-management')
+            branch("*/jumpstart")
+            extensions {
+                relativeTargetDirectory('platform-management')
+            }
         }
     }
 } 
