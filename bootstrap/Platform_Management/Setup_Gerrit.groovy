@@ -55,7 +55,7 @@ fi''')
             }
             branch("*/jumpstart")
             extensions {
-                relativeTargetDir('platform-management')
+                relativeTargetDirectory('platform-management')
             }
         }
     }
