@@ -53,8 +53,10 @@ fi''')
                 url("${platformToolsGitURL}")
                 credentials("adop-jenkins-master")
             }
-            branch("*/master")
-            relativeTargetDir('platform-management')
+            branch("*/jumpstart")
+            extensions {
+                relativeTargetDir('platform-management')
+            }
         }
     }
 } 

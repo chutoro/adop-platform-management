@@ -33,7 +33,7 @@ ls ${PLUGGABLE_SCM_PROVIDER_PATH}pluggable/scm/
                 name("origin")
                 url("${pluggableGitURL}")
             }
-            branch("*/master")
+            branch("*/jumpstart")
         }
     }
 } 
