@@ -38,7 +38,7 @@ build job: "${workspaceName}/Project_Management/Generate_Project", parameters: [
 retry(5) {
     build job: "${workspaceName}/${projectName}/Cartridge_Management/Load_Cartridge", parameters: [[$class: 'StringParameterValue', name: 'CARTRIDGE_CLONE_URL', value: "${cartridgeURL}"], [$class: 'StringParameterValue', name: 'SCM_PROVIDER', value: "${scmProvider}"]]
 }''')
-sandbox()
+//sandbox()
         }
     }
 } 
